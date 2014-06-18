@@ -1,0 +1,36 @@
+# shorthands
+alias mix='alsamixer'
+alias bye='shutdown now'                                # use of shutdown is allowed
+alias sirb='irb --simple-prompt'                # simple ruby prompt
+alias ..='cd ..'                                                # just ".." to go to parent directory
+alias mount='mount |column -t'                  # nice mount output (column'd)
+alias ping='ping -c 5'                                  # ping 5 times instead of continuously
+alias ports='netstat -tulanp'                   # show open ports
+alias vi="vim"                                                  # vim instead of vi
+alias l="ls -la"                                                # ls all files and use long format
+alias ttytter="ttytter -dostream -ssl -ansi"    # enable color, SSL and streaming API in TTYtter
+alias :x="exit"                                 # use :x (like vim) to exit terminal
+alias c="cd"
+alias xfixkeys="setxkbmap -layout dvorak -variant gb"           # set up keyboard (xfce fucks it up)
+alias pi="ssh pi@192.168.1.113"         # RasPi ssh
+alias ss="sudo systemctl"
+alias external_screen="xrandr --output LVDS1 --mode 1600x900 --output VGA1 --mode 1024x768 --right-of LVDS1"
+alias reset="reset; source ~/.zshrc"    # also re-source .zshrc when resetting
+alias g=git
+alias s=sudo
+alias rmrf="rm -Rf"
+
+# pacman and packer shorthands
+
+alias pacu='sudo packer -Syu'                  # Synchronize with repositories and then upgrade packages that are out of date on the local system.
+alias pac='sudo packer -S'                             # Install specific package(s) from the repositories
+alias pacin='sudo packer -U'                   # Install specific package not from the repositories but from a file 
+alias pacrm='sudo packer -R'           # Remove the specified package(s), retaining its configuration(s) and required dependencies
+alias pacr='sudo pacman -Rns'                  # Remove the specified package(s), its configuration(s) and unneeded dependencies
+# repositories info
+alias pacrinfo='packer -Si'                    # Display information about a given package in the repositories
+alias pacs='packer -Ss'                                # Search for package(s) in the repositories
+# local info
+alias paclinfo='packer -Qi'                    # Display information about a given package in the local database
+alias paclocs='packer -Qs'                             # Search for package(s) in the local database
+
