@@ -10,3 +10,4 @@
 	st = status
 	fuck = reset --hard
 	ch = checkout
+        a = add
