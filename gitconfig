@@ -1,0 +1,12 @@
+[user]
+	name = Thomas Toye
+	email = toye.thomas@gmail.com
+[core]
+	editor = vim
+[push]
+	default = simple
+[alias]
+	c = commit
+	st = status
+	fuck = reset --hard
+	ch = checkout
