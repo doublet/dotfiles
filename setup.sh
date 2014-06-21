@@ -11,6 +11,7 @@ echo " -- Backing up and copying new files..."
 echo " -- Backup location: ./old_files/${NOW}"
 cd - # go back to repo root
 cd dotfiles
+mkdir ../old_files
 mkdir ../old_files/${NOW}
 for FILE in *
 do
