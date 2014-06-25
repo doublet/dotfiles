@@ -37,7 +37,7 @@ myManageHook = composeAll
     , className =? "Minitube"             --> doShift "media"
     , className =? "Gimp"                 --> doShift "graphics"
     , className =? "Deluge"               --> doShift "media"
-    , className =? "Eclipse"              --> doShift "dev"
+--    , className =? "Eclipse"              --> doShift "dev"
     , className =? "jetbrains-phpstorm"   --> doShift "dev"
     , className =? "Spotify"              --> doShift "media"
     
