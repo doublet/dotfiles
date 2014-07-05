@@ -11,3 +11,4 @@
 	fuck = reset --hard
 	ch = checkout
         a = add
+        l = log --pretty=oneline
