@@ -20,7 +20,7 @@ if [ -f ./README.md ]; then
   curl -L http://install.ohmyz.sh | sh
   clear
   echo "Installed required packages. Now going to install dotfiles..."
-  ./copy.sh
+  ./copy_headless.sh
 else
     echo "No README.md found. Assuming you haven't cloned the repo."
   echo "Checking for git..."
