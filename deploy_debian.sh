@@ -26,6 +26,8 @@ else
   sudo apt-get install zsh
   echo "Changing login shell to zsh..."
   chsh zsh
+  echo "Installing oh-my-zsh..."
+  curl -L http://install.ohmyz.sh | sh
   clear
   echo "Installed required packages. Now going to install dotfiles..."
   ./copy.sh
