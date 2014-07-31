@@ -12,11 +12,11 @@ if [ -f ./README.md ]; then
   echo "Updating mirrorlist..."
   sudo apt-get update
   echo "Installing zsh..."
-  sudo apt-get install zsh
+  sudo apt-get install zsh -y
   echo "Changing login shell to zsh..."
   chsh -s zsh
   echo "Installing oh-my-zsh..."
-  sudo apt-get install curl
+  sudo apt-get install curl -y
   curl -L http://install.ohmyz.sh | sh
   clear
   echo "Installed required packages. Now going to install dotfiles..."
@@ -29,7 +29,7 @@ else
   if [ GIT_NOT_INSTALLED ];
   then
     echo "Git was not found. Installing..."
-    sudo apt-get install git
+    sudo apt-get install git -y
   fi
   echo "Cloning repo into ~/.dotfiles and continuing from there..."
   git clone https://github.com/doublet/dotfiles.git ~/.dotfiles
