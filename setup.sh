@@ -6,7 +6,7 @@ export DOTFILES_DIR=$(pwd)
 
 clear
 
-cd DOTFILES_DIR
+cd $DOTFILES_DIR
 
 ./scripts/backup.sh
 ./scripts/copy.sh
