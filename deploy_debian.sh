@@ -33,6 +33,8 @@ else
   fi
   echo "Cloning repo into ~/.dotfiles and continuing from there..."
   git clone https://github.com/doublet/dotfiles.git ~/.dotfiles
+  cd ~/.dotfiles
   ~/.dotfiles/deploy_debian.sh
+
 fi
 
