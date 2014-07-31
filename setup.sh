@@ -11,7 +11,5 @@ cd DOTFILES_DIR
 ./scripts/backup.sh
 ./scripts/copy.sh
 
-echo " -- Recompiling xmonad.hs..."
-xmonad --recompile
-
+./scripts/xmonad.sh
 
