@@ -19,7 +19,7 @@ An easier way is `deploy_debian.sh`. This will install `git`, `zsh`, change your
 
 This will do everything for you
 
-`wget https://raw.githubusercontent.com/doublet/dotfiles/master/deploy_debian.sh | sh`
+`wget https://raw.githubusercontent.com/doublet/dotfiles/master/deploy_debian.sh -O - | sh`
 
 ### Arch boxes
 
