@@ -1,8 +1,6 @@
 #/bin/bash
 
-echo " -- Installing oh-my-zsh..."
-cd # go to ~
-curl -L http://install.ohmyz.sh | sh # install oh-my-zsh
+./scripts/zsh.sh
 
 clear
 
