@@ -1,3 +1,5 @@
+#!/bin/bash
+# This file copies new files to ~
 
 echo " -- Copying new files..."
 

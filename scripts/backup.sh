@@ -1,3 +1,4 @@
+#/bin/bash
 # This file backs up old dotfiles (those in ~)
 
 echo " -- Backing up and copying new files..."
