@@ -17,10 +17,6 @@ source $ZSH/oh-my-zsh.sh
 # Completion
 eval "$(grunt --completion=zsh)"
 
-
-export PATH="/home/thomas/.cabal/bin:/home/thomas/bin:/home/thomas/.global_npm/bin:/home/thomas/.gem/ruby/2.1.0/bin:/root/.gem/ruby/2.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/thomas/.rvm/bin:/home/thomas/.rvm/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
