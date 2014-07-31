@@ -14,8 +14,9 @@ if [ -f ./README.md ]; then
   echo "Installing zsh..."
   sudo apt-get install zsh
   echo "Changing login shell to zsh..."
-  chsh zsh
+  chsh -s zsh
   echo "Installing oh-my-zsh..."
+  sudo apt-get install curl
   curl -L http://install.ohmyz.sh | sh
   clear
   echo "Installed required packages. Now going to install dotfiles..."
