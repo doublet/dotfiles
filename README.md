@@ -3,10 +3,23 @@
 These are my dotfiles.
 I cloned this repo in `~/.dotfiles` but any directory will do.
 
-After cloning, you can run `./copy.sh`. This will set up all the dotfiles.
+## Lay-out
 
-## Assumptions
+* In `dotfiles`, you will find all the dotfiles
+* In `scripts`, some modular scripts live
+* `old_files` will be created by the backup script and contains old dotfiles.
 
-* `zsh` is assumed to be your shell, but it will work with `bash` too. Just skip `oh-my-zsh`. However, a `.bashrc` is not included at the moment.
-* `xmonad` is assumed to be your window manager, but others will work too. Just ignore the `command not found: xmonad` or comment out `xmonad --recompile`
+## Installation
+
+You can just clone the repo and run `copy.sh`. This assumes that you already have `git` installed, `zsh` installed and `oh-my-zsh` set up.
+An easier way is `deploy_debian.sh`. This will install `git`, `zsh`, change your default shell to `zsh` and grab `oh-my-zsh`.
+
+### Debian boxes
+
+This will do everything for you
+`wget https://raw.githubusercontent.com/doublet/dotfiles/master/deploy_debian.sh | sh``
+
+### Arch boxes
+
+Still working on this. Ideally, this will set up all manually installed packages and do some setup work.
 
