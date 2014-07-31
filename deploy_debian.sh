@@ -28,6 +28,6 @@ else
   chsh zsh
   clear
   echo "Installed required packages. Now going to install dotfiles..."
-  ./setup.sh
+  ./copy.sh
 fi
 

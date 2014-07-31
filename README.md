@@ -3,7 +3,7 @@
 These are my dotfiles.
 I cloned this repo in `~/.dotfiles` but any directory will do.
 
-After cloning, you can run `./setup.sh`. This will setup all the dotfiles.
+After cloning, you can run `./copy.sh`. This will set up all the dotfiles.
 
 ## Assumptions
 
