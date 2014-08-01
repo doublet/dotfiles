@@ -4,7 +4,7 @@
 [core]
 	editor = vim
 [push]
-	default = simple
+	default = matching
 [alias]
 	c = commit
 	st = status
