@@ -14,6 +14,11 @@ source $ZSH/oh-my-zsh.sh
 
 . ~/.zsh_aliases
 
+wiki () {
+    dig +short txt $1.wp.dg.cx
+}
+
+
 # Completion
 eval "$(grunt --completion=zsh)"
 
