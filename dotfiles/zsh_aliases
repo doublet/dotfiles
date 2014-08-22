@@ -19,6 +19,7 @@ alias reset="reset; source ~/.zshrc"    # also re-source .zshrc when resetting
 alias g=git
 alias s=sudo
 alias rmrf="rm -Rf"
+alias act="activator"
 
 # pacman and packer shorthands
 
