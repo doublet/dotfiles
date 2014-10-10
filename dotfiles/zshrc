@@ -9,6 +9,7 @@ ZSH_THEME="agnoster"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+. /usr/share/zsh/site-contrib/powerline.zsh
 
 # User configuration
 
