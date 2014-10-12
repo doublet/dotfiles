@@ -20,6 +20,8 @@ wiki () {
     dig +short txt $1.wp.dg.cx
 }
 
+# For netbeans and other Java applications
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Completion
 eval "$(grunt --completion=zsh)"
