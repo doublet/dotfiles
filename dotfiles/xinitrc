@@ -20,15 +20,7 @@ xloadimage -onroot -center ~/Downloads/bank.jpg
 xsetroot -cursor_name left_ptr # use a nice cursor instead of the default X
 #setxkbmap be # I'm using a Belgian azerty keyboard
 setxkbmap -layout dvorak -variant gb # I'm using a britsh dvorak keyboard
+setxkbmap -option caps:escape # use caps as escape
 
-# note: the following is commented out because xfce starts that
-
-## start xscreensaver
-#/usr/bin/xscreensaver -no-splash &
-
-## launch window manager
-#exec xmonad
-
-# launch xfce
 exec startxfce4
 
