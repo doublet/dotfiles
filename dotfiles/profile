@@ -15,4 +15,5 @@ PATH=$PATH:"$HOME/.rvm/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+export PYTHONPATH=/usr/lib/python3.4/site-packages
 
