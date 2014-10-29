@@ -16,6 +16,8 @@ source $ZSH/oh-my-zsh.sh
 . ~/.profile
 . ~/.zsh_aliases
 
+export EDITOR=vim
+
 wiki () {
     dig +short txt $1.wp.dg.cx
 }
