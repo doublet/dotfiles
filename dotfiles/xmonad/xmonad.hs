@@ -46,9 +46,7 @@ myManageHook = composeAll
     , className =? "sublime-text"         --> doShift "dev"
     , className =? "Vlc"                  --> doShift "media"
     , className =? "Minitube"             --> doShift "media"
-    , className =? "Gimp"                 --> doShift "graphics"
     , className =? "Deluge"               --> doShift "media"
---    , className =? "Eclipse"              --> doShift "dev"
     , className =? "jetbrains-phpstorm"   --> doShift "dev"
     , className =? "Spotify"              --> doShift "media"
     
