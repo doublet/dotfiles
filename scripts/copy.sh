@@ -6,7 +6,11 @@ echo " -- Copying new files..."
 cd dotfiles
 for FILE in *
 do
-  cp -r ${FILE} ~/.${FILE}
+  if [ -d "${FILE}" ]; then
+    cp -r ${FILE}/* ~/.${FILE}
+  else
+    cp -r ${FILE} ~/.${FILE}
+  fi
   echo "Created ~/.${FILE}"
 done
 
