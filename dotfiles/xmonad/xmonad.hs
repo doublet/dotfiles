@@ -109,7 +109,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 	, ((controlMask, xK_Print), spawn "xfce4-screenshooter")
 	, ((0, xK_Print), spawn "xfce4-screenshooter")
 	, ((modMask, xK_p),
-		spawn "exe=`dmenu_path_c | yeganesh` && eval \"exec $exe\"")
+		spawn "dmenu_run")
+        , ((modMask, xK_s), spawn "dmenu_run")
 	-- Mute volume.
 	, ((modMask .|. controlMask, xK_m),
 		spawn "amixer -q set Master toggle")
