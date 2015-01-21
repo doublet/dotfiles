@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # This file is meant for headless installs (no X server), thus without a window manager
 
 export DOTFILES_DIR=$(pwd)
