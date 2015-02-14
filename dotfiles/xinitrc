@@ -18,9 +18,20 @@ xset fp rehash
 # set background
 xloadimage -onroot -center ~/Downloads/bank.jpg
 xsetroot -cursor_name left_ptr # use a nice cursor instead of the default X
-#setxkbmap be # I'm using a Belgian azerty keyboard
-setxkbmap -layout dvorak -variant gb # I'm using a britsh dvorak keyboard
-setxkbmap -option caps:escape # use caps as escape
+
+# Use my custom keymap if available, otherwise use standard dvorak gb layout
+if [ -f ~/.Xmodmap ]
+then
+  xmodmap ~/.Xmodmap
+else
+  #setxkbmap be # I'm using a Belgian azerty keyboard
+  setxkbmap -layout dvorak -variant gb # I'm using a britsh dvorak keyboard
+  setxkbmap -option caps:escape # use caps as escape
+fi
+
+if type "xflux" > /dev/null; then
+  xflux -l 50.83 -g 3.26 # start xflux if installed
+fi
 
 exec startxfce4
 
