@@ -12,3 +12,4 @@
 	ch = checkout
         a = add
         l = log --pretty=oneline
+        diffs = diff --staged
