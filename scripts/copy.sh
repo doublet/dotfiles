@@ -1,16 +1,15 @@
 #!/bin/bash
 # This file copies new files to ~
 
-echo " -- Copying new files..."
+echo " -- Linking new files..."
+
+CURRENT_DIR=`pwd`
 
 cd dotfiles
 for FILE in *
 do
-  if [ -d "${FILE}" ]; then
-    cp -r ${FILE}/* ~/.${FILE}
-  else
-    cp -r ${FILE} ~/.${FILE}
-  fi
-  echo "Created ~/.${FILE}"
+  rm ~/.${FILE}
+  ln -s ${CURRENT_DIR}/dotfiles/${FILE} ~/.${FILE}
+  echo "ln -s ${CURRENT_DIR}/dotfiles/${FILE} ~/.${FILE}"
 done
 
