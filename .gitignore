@@ -2,3 +2,7 @@
 # directory that holds back-ups of dotfiles
 old_files/
 
+xmonad.o
+xmonad-x86_64-linux
+xmonad.hi
+
