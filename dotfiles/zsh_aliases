@@ -1,20 +1,15 @@
 # shorthands
 alias mix='alsamixer'
 alias bye='shutdown now'                                # use of shutdown is allowed
-alias sirb='irb --simple-prompt'                # simple ruby prompt
 alias ..='cd ..'                                                # just ".." to go to parent directory
-alias mount='mount |column -t'                  # nice mount output (column'd)
-alias ping='ping -c 5'                                  # ping 5 times instead of continuously
+alias mounts='mount | column -t'                  # mount show - nice mount output (column'd)
+alias pin='ping -c 5'                                  # ping 5 times instead of continuously
 alias ports='netstat -tulanp'                   # show open ports
 alias vi="vim"                                                  # vim instead of vi
 alias l="ls -la"                                                # ls all files and use long format
-alias ttytter="ttytter -dostream -ssl -ansi"    # enable color, SSL and streaming API in TTYtter
 alias :x="exit"                                 # use :x (like vim) to exit terminal
-alias c="cd"
-alias xfixkeys="setxkbmap -layout dvorak -variant gb"           # set up keyboard (xfce fucks it up)
-alias pi="ssh pi@192.168.1.113"         # RasPi ssh
+alias xfixkeys="xmodmap ~/.Xmodmap"           # set up keyboard (xfce fucks it up)
 alias ss="sudo systemctl"
-alias external_screen="xrandr --output LVDS1 --mode 1600x900 --output VGA1 --mode 1024x768 --right-of LVDS1"
 alias reset="reset; source ~/.zshrc"    # also re-source .zshrc when resetting
 alias g=git
 alias s=sudo
