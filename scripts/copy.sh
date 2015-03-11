@@ -13,3 +13,5 @@ do
   echo "ln -s ${CURRENT_DIR}/dotfiles/${FILE} ~/.${FILE}"
 done
 
+cd -
+

@@ -7,6 +7,7 @@ I usually clone this repo in `~/.dotfiles` but any directory will do.
 
 * In `dotfiles`, you will find all the dotfiles
 * In `scripts`, some modular scripts pertaining to the deployment of these files live 
+* Files in `bin` are small scripts that will become available on the $PATH (a symlink to them is placed in `~/bin`)
 * `old_files` will be created by the backup script and contains old dotfiles.
 
 ## Installation

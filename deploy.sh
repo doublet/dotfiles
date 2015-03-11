@@ -13,3 +13,5 @@ cd $DOTFILES_DIR
 
 ./scripts/xmonad.sh
 
+./scripts/userscripts.sh
+
