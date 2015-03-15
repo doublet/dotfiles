@@ -30,7 +30,7 @@ else
 fi
 
 if type "xflux" > /dev/null; then
-  xflux -l 50.83 -g 3.26 # start xflux if installed
+  xflux -l 50.83 -g 3.26 & # start xflux if installed
 fi
 
 exec startxfce4
