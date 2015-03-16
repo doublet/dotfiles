@@ -9,19 +9,17 @@ ZSH_THEME="agnoster"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-. /usr/share/zsh/site-contrib/powerline.zsh
 
 # User configuration
 
 . ~/.profile
 . ~/.zsh_aliases
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
+. ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
+
+# Use vi-style bindings
+#set -o vi
 
 export EDITOR=vim
-
-wiki () {
-    dig +short txt $1.wp.dg.cx
-}
 
 # For netbeans and other Java applications
 export _JAVA_AWT_WM_NONREPARENTING=1

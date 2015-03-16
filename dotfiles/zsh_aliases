@@ -30,3 +30,8 @@ alias pacs='packer -Ss'                                # Search for package(s) i
 alias paclinfo='packer -Qi'                    # Display information about a given package in the local database
 alias paclocs='packer -Qs'                             # Search for package(s) in the local database
 
+wiki () {
+    dig +short txt $1.wp.dg.cx
+}
+    
+
