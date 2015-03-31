@@ -3,7 +3,7 @@
 echo "Updating mirrorlist..."
 sudo apt-get update
 echo "Installing all required packages..."
-sudo apt-get install zsh vim git htop -y
+sudo apt-get install zsh vim git htop tmux -y
 echo "Setting zsh as default shell..."
 chsh -s zsh
 

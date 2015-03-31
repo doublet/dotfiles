@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 
 . ~/.profile
 . ~/.zsh_aliases
-. ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
+[ -f ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && . ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
 # Use vi-style bindings
 #set -o vi
@@ -25,7 +25,10 @@ export EDITOR=vim
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Completion
-eval "$(grunt --completion=zsh)"
+
+if type "grunt" > /dev/null; then
+  eval "$(grunt --completion=zsh)"
+fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
