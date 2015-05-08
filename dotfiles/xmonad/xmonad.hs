@@ -11,6 +11,7 @@ import XMonad.Layout.SimplestFloat
 import XMonad.Layout.Spiral
 import XMonad.Layout.PerWorkspace(onWorkspace)
 import XMonad.Layout.Tabbed
+import XMonad.Layout.Spacing
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import qualified XMonad.StackSet as W
@@ -215,7 +216,7 @@ main = do
 	xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
 	xmonad $ defaults
 		{ manageHook = manageDocks <+> manageHook defaultConfig
-		, layoutHook = avoidStruts $ myLayouts
+		, layoutHook = smartSpacing 3 $ avoidStruts $ myLayouts
 		, logHook = dynamicLogWithPP xmobarPP
 			{ ppOutput = hPutStrLn xmproc
 			, ppTitle = xmobarColor "#657b83" "" . shorten 100
