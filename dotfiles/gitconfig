@@ -1,6 +1,7 @@
 [user]
 	name = Thomas Toye
 	email = toye.thomas@gmail.com
+	signingkey = A1D683E4
 [core]
 	editor = vim
 [push]

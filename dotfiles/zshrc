@@ -4,6 +4,11 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load.
 ZSH_THEME="agnoster"
 
+## 256 colors in tmux
+#if [ "$TMUX" = "" ]; then 
+#  TERM=xterm-256color tmux
+#fi
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
@@ -30,25 +35,4 @@ if type "grunt" > /dev/null; then
   eval "$(grunt --completion=zsh)"
 fi
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-
-# GPG
-envfile="$HOME/.gnupg/gpg-agent.env"
-if [[ -e "$envfile" ]] && kill -0 $(grep GPG_AGENT_INFO "$envfile" | cut -d: -f 2) 2>/dev/null; then
-  eval "$(cat "$envfile")"
-else
-  eval "$(gpg-agent --daemon --enable-ssh-support --write-env-file "$envfile")"
-fi
-
-export GPG_AGENT_INFO  # the env file does not contain the export statement
-export SSH_AUTH_SOCK   # enable gpg-agent for ssh
-    
 
