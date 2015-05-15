@@ -2,6 +2,12 @@
 # directory that holds back-ups of dotfiles
 old_files/
 
+# GnuPG stuff, except committed files
+!dotfiles/gnupg/gpg-agent.conf
+!dotfiles/gnupg/gpg.conf
+!dotfiles/gnupg/sks-keyservers.netCA.pem
+dotfiles/gnupg/
+
 xmonad.o
 xmonad-x86_64-linux
 xmonad.hi
