@@ -1,0 +1,22 @@
+---
+
+- name: Set up a Debian system with my tools and dotfiles
+  vars_files:
+    - vars/nvm.yml
+  hosts: all
+  sudo: yes
+  roles:
+#    - update_upgrade
+#    - zsh
+#    - vim
+#    - debug
+#    - keepass
+#    - insync
+#    - utils_cli
+#    - utils_graphical
+#    - cups
+#    - xflux
+#    - python_utils
+#    - gimp
+    - pablocrivella.nvm
+

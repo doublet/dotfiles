@@ -1,0 +1,5 @@
+---
+- name: Create ~/bin if not exists
+  file: path=/home/{{ unix_username }}/bin state=directory owner={{ unix_username }} group={{ unix_username }}
+- name: Get xflux binary
+  unarchive: dest=/home/{{ unix_username }}/bin src=https://justgetflux.com/linux/xflux64.tgz copy=no

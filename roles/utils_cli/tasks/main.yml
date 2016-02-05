@@ -1,0 +1,19 @@
+---
+- name: Install some command line utilities
+  apt: name={{ item }} state=present update_cache=yes
+  with_items:
+    - ansible
+    - arp-scan
+    - cmatrix
+    - curl
+    #- firmware-iwlwifi
+    - flac
+    - git
+    - nethogs
+    - optipng
+    - pandoc
+    - rsync
+    - tree
+    - vagrant
+    - youtube-dl
+

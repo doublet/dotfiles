@@ -1,0 +1,16 @@
+---
+nvm_env: user
+nvm_version: v0.29.0
+nvm_default_node_version: stable
+nvm_node_versions:
+  stable
+nvm_users:
+  - "{{ unix_username }}"
+nvm_global_packages:
+  - webpack
+  - webpack-dev-server
+  - typings
+  - karma-cli
+  - protractor
+  - typescript
+

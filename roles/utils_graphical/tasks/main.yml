@@ -1,0 +1,14 @@
+---
+- name: Install some graphical utilities
+  apt: name={{ item }} state=present update_cache=yes
+  with_items:
+    - apvlv
+    - audacity
+    - calibre
+    - evince
+    - gparted
+    - iceweasel
+    - meld
+    - mpv
+    - wireshark
+

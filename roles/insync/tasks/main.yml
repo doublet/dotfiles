@@ -1,0 +1,7 @@
+---
+- name: Add Insync public key
+  apt_key: url=https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key state=present
+- name: Add Insync repository
+  apt_repository: repo="deb http://apt.insynchq.com/{{ linux_distro }} {{ linux_distro_codename }} non-free contrib"
+- name: Update package list and install Insync client
+  apt: name=insync state=present update_cache=true

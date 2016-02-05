@@ -1,0 +1,12 @@
+---
+- name: Install CUPS packages (server, client, PDF printing support)
+  apt: name={{ item }} state=present
+  with_items:
+    - cups
+    - cups-client
+    - cups-pdf
+- name: Copy over new /etc/cups/client.conf
+  copy: src=client.conf dest=/etc/cups/client.conf backup=yes force=yes
+- name: Add user to lpadmin group
+  user: name={{ unix_username }} groups=lpadmin append=yes
+

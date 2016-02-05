@@ -1,0 +1,2 @@
+---
+- debug: msg="{{ansible_env.HOME}} is the ansible HOME env"
