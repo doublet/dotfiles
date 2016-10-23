@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Franz
+Comment=A free messaging app for Slack, Facebook Messenger, WhatsApp, Telegram and more
+Exec=/opt/franz/Franz
+Icon=/opt/franz/resources/app.asar.unpacked/assets/franz.png
+Terminal=false
+Type=Application
+Categories=Messaging,Internet
+
