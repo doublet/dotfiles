@@ -25,7 +25,7 @@ The following stuff is set up:
 
 TODO https://github.com/lmmx/devnotes/wiki/Bash-script:-screencast-GIF-(via-temp-.avi)
 
-Note: Ansible 2 is needed for `xflux` since it uses the `unarchive` module to grab a binary over https.
+TODO Docker role
 
 ### Not yet started
 
@@ -57,6 +57,11 @@ fonts (VDS krabbels, VAG rounded?)
 Run the `playbook.yml` on your local machine like this:
 
 ```
-ansible-playbook -i hosts playbook.yml --ask-sudo-pass
+ansible-playbook -i hosts playbook.yml --ask-sudo-pass --connection=local
 ```
+
+## Before install
+
+* Only works for Debian-based systems (uses `apt`)
+* The `aptitude` package should be installed before running the playbook (`sudo apt-get install aptitude`)
 
