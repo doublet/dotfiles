@@ -4,4 +4,8 @@
 - name: Add Insync repository
   apt_repository: repo="deb http://apt.insynchq.com/{{ linux_distro }} {{ linux_distro_codename }} non-free contrib"
 - name: Update package list and install Insync client
-  apt: name=insync state=present update_cache=true
+  apt: name={{ item }} state=present update_cache=true
+  with_items:
+    - insync
+    - insync-thunar
+
