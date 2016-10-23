@@ -3,8 +3,8 @@
 - name: Set up a Debian system with my tools and dotfiles
   vars_files:
     - vars/nvm.yml
+    - vars/idea.yml
   hosts: all
-  sudo: yes
   roles:
     - update_upgrade
     - zsh
@@ -20,4 +20,9 @@
     - gimp
     - pablocrivella.nvm
     - spotify
+    - angstwad.docker_ubuntu
+    - rdeknijf.intellij
+    - java
+    - xmonad
+    - franz
 
