@@ -1,0 +1,18 @@
+---
+- name: Install Xmonad
+  apt: name=xmonad state=present
+- name: Install xmobar
+  apt: name=xmobar state=present
+- name: Install dmenu
+  apt: name=suckless-tools state=present
+- name: Copy .xmobarrc
+  copy: src=xmobarrc dest=/home/{{ unix_username }}/.xmobarrc
+- name: Ensure ~/.xmonad directory exists
+  file: name=/home/{{ unix_username }}/.xmonad state=directory
+- name: Copy xmonad.hs
+  copy: src=xmonad.hs dest=/home/{{ unix_username }}/.xmonad/xmonad.hs
+- name: Ensure xmonad.errors exists
+  file: name=/home/{{ unix_username }}/.xmonad/xmonad.errors state=touch
+- name: Recompile xmonad.hs
+  command: xmonad --recompile
+
