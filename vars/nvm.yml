@@ -6,11 +6,4 @@ nvm_node_versions:
   stable
 nvm_users:
   - "{{ unix_username }}"
-nvm_global_packages:
-  - webpack
-  - webpack-dev-server
-  - typings
-  - karma-cli
-  - protractor
-  - typescript
 
