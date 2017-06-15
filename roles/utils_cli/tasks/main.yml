@@ -1,6 +1,7 @@
 ---
 - name: Install some command line utilities
   apt: name={{ item }} state=present update_cache=yes
+  become: true
   with_items:
     - ansible
     - arp-scan

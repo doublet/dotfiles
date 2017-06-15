@@ -1,10 +1,12 @@
 ---
 - name: Install Keepass2
   apt: name=keepass2 state=present
+  become: true
 - name: Install required Mono packages for KeeFox
   # See https://github.com/luckyrat/KeeFox/wiki/en-|-Running-KeeFox-under-Mono
   # for the required packages
   apt: name={{ item }} state=present
+  become: true
   with_items:
     - mono-dmcs
     - libmono-system-management4.0-cil

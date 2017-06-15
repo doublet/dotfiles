@@ -1,6 +1,7 @@
 ---
 - name: Install the GIMP
   apt: name=gimp state=installed
+  become: true
 - name: Make sure ~/.gimp-2.8 exists
   file: state=directory path=/home/{{ unix_username }}/.gimp-2.8 owner={{ unix_username }} group={{ unix_username }}
 - name: Get ps-menurc for Photoshop-like keybindings

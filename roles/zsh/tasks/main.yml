@@ -1,6 +1,8 @@
 ---
 - name: Install zsh package
   apt: name="zsh" state=present
+  become: true
 - name: Set zsh as default shell for user
   user: name={{ unix_username }} shell="/bin/zsh"
+  become: true
 - include: oh-my-zsh.yml

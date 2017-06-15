@@ -1,8 +1,11 @@
 ---
 - name: Ensure /opt/franz exists
   file: name=/opt/franz state=directory
+  become: true
 - name: Get Franz
   unarchive: dest=/opt/franz src=https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz copy=no
+  become: true
 - name: Copy desktop file
   copy: src=franz.desktop dest=/usr/share/applications/franz.desktop force=yes
+  become: true
 

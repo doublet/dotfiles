@@ -1,10 +1,13 @@
 ---
 - name: Install Xmonad
   apt: name=xmonad state=present
+  become: true
 - name: Install xmobar
   apt: name=xmobar state=present
+  become: true
 - name: Install dmenu
   apt: name=suckless-tools state=present
+  become: true
 - name: Copy .xmobarrc
   copy: src=xmobarrc dest=/home/{{ unix_username }}/.xmobarrc
 - name: Ensure ~/.xmonad directory exists
